@@ -1,16 +1,21 @@
-package com.dancas.persons;
+package com.dancas.persons.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Objects;
 
-class Person {
+@Entity
+public class Person {
 
-    private Long id;
+    private @Id
+    @GeneratedValue Long id;
     private String name;
     private String role;
 
     Person() {}
 
-    Person(String name, String role) {
+    public Person(String name, String role) {
 
         this.name = name;
         this.role = role;
