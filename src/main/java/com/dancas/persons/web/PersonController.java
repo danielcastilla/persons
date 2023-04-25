@@ -5,6 +5,7 @@ import com.dancas.persons.model.Person;
 import com.dancas.persons.repository.PersonRepository;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 
 @RestController
@@ -23,6 +24,7 @@ public class PersonController {
 
     @GetMapping("/persons/{id}")
     Person one(@PathVariable Long id){
+
         return repository.findById(id)
             .orElseThrow(() -> new PersonNotFoundException(id));
     }

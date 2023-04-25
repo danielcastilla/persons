@@ -1,3 +1,5 @@
+target
+
 # Intellij
 .idea/
 *.iml
@@ -9,3 +11,6 @@
 # Maven
 log/
 target/
+
+*.class
+
