@@ -6,3 +6,4 @@
 
 http://localhost:8080/swagger-ui/index.html
 
+<image src="./images/swagger-1.png" alt="Descripción de la imagen" />
